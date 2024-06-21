@@ -33,13 +33,38 @@
 
 ## 📦 私有化部署
 
-- 申请创建你自己的Work和KV（免费版就好~~一起白嫖到CF倒闭~~） [workers.cloudflare.com](https://workers.cloudflare.com/).
-- 下载仓库代码，编辑 `wrangler.toml`:
+- 申请创建两个的Work和KV，NOTES和SHARE,记录id值（免费版就好~~一起白嫖到CF倒闭~~） [workers.cloudflare.com](https://workers.cloudflare.com/).
+
+- 下载仓库代码
+  git clone https://github.com/ynsc133/serverless-cloud-notepad.git
+
+- 编辑 `wrangler.toml`，修改id值。记得保存。
 ```
 kv_namespaces = [
-  { binding = "NOTES", id = "<这里填你自己的第1个KV id>" },
-  { binding = "SHARE", id = "<这里填你自己的第2个KV id>" }
+  { binding = "NOTES", id = "你在cf创建的kv空间第一个id", preview_id = "01083e57f68046079a62015c3ea4a145" },
+  { binding = "SHARE", id = "你在cf创建的kv空间第二个id", preview_id = "f89caa54860940709800dc6ed3ff920a" }
 ]
+
+[env.production]
+kv_namespaces = [
+    { binding = "NOTES", id = "你在cf创建的kv空间第一个id" },
+    { binding = "SHARE", id = "你在cf创建的kv空间第二个id" }
+]
+```
+- 测试代码
+
+  wrangler dev
+
+-登录cloudflare
+```
+wrangeler login
+```
+-创建令牌：https://dash.cloudflare.com/profile/api-tokens
+注意权限模板选择编辑worker,全部默认就行。记录令牌值。
+
+配置你的电脑终端服务，填入之前的token
+```
+export CLOUDFLARE_API_TOKEN=记录的令牌值
 ```
 - 执行命令推送代码到 Cloudflare
 ```
