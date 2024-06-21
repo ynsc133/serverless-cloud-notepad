@@ -49,14 +49,14 @@ kv_namespaces = [
 
   wrangler dev
 
--登录cloudflare
+- 登录cloudflare
 ```
 wrangeler login
 ```
--创建令牌：https://dash.cloudflare.com/profile/api-tokens
+- 创建令牌：https://dash.cloudflare.com/profile/api-tokens
 注意权限模板选择编辑worker,全部默认就行。记录令牌值。
 
-配置你的电脑终端服务，填入之前的token
+- 配置你的电脑终端服务，填入之前的token
 ```
 export CLOUDFLARE_API_TOKEN=记录的令牌值
 ```
