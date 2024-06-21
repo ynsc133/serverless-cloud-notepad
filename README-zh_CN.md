@@ -64,8 +64,10 @@ export CLOUDFLARE_API_TOKEN=记录的令牌值
 ```
 - 执行命令推送代码到 Cloudflare
 ```
-$ npm i
-$ npm run publish
+npm i
+```
+```
+npm run publish
 ```
 - 给你的域名添加一条CNAME解析记录，指向你刚刚创建的Work地址（如果你有自己的域名的话）
 
