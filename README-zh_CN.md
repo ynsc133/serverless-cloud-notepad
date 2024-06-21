@@ -33,7 +33,7 @@
 
 ## 📦 私有化部署
 
-- 申请创建两个的Work和KV，NOTES和SHARE,记录id值（免费版就好~~一起白嫖到CF倒闭~~） [workers.cloudflare.com](https://workers.cloudflare.com/).
+- 申请创建两个KV，“NOTES”和“SHARE”,记录id值（免费版就好~~一起白嫖到CF倒闭~~） [workers.cloudflare.com](https://workers.cloudflare.com/).
 
 - 下载仓库代码
   git clone https://github.com/ynsc133/serverless-cloud-notepad.git
