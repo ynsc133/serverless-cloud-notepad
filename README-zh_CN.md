@@ -41,12 +41,6 @@
 - 编辑 `wrangler.toml`，修改id值。记得保存。
 ```
 kv_namespaces = [
-  { binding = "NOTES", id = "你在cf创建的kv空间第一个id", preview_id = "你在cf创建的kv空间第一个id" },
-  { binding = "SHARE", id = "你在cf创建的kv空间第二个id", preview_id = "你在cf创建的kv空间第二个id" }
-]
-
-[env.production]
-kv_namespaces = [
     { binding = "NOTES", id = "你在cf创建的kv空间第一个id" },
     { binding = "SHARE", id = "你在cf创建的kv空间第二个id" }
 ]
