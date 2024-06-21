@@ -37,8 +37,9 @@
  [workers.cloudflare.com](https://workers.cloudflare.com/).
 
 - 下载仓库代码
+```
   git clone https://github.com/ynsc133/serverless-cloud-notepad.git
-
+```
 - 编辑 `wrangler.toml`，修改id值。记得保存。
 ```
 kv_namespaces = [
