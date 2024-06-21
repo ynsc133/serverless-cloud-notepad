@@ -47,10 +47,10 @@ kv_namespaces = [
     { binding = "SHARE", id = "你在cf创建的kv空间第二个id" }
 ]
 ```
-- 测试代码
-
+- 测试一下
+```
   wrangler dev
-
+```
 - 登录cloudflare
 ```
 wrangeler login
