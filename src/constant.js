@@ -2,9 +2,9 @@
 export const CDN_PREFIX = '//gcore.jsdelivr.net/gh/s0urcelab/serverless-cloud-notepad@master/static'
 
 // server side salt
-export const SALT = SCN_SALT
+export const SALT = 'emusaq67'
 // server side secret
-export const SECRET = SCN_SECRET
+export const SECRET = 'ujhgt501'
 
 // supported language
 export const SUPPORTED_LANG = {
